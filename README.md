@@ -147,13 +147,13 @@ All processing paths are currently hardcoded to the UFL HPC system under `/blue/
 
 ---
 
-## Automation Suggestions
+## Automation Suggestions to be done in the future
 
 The pipeline currently consists of manually submitted individual scripts. Below are suggestions for improving automation, reproducibility, and portability.
 
 ### 1. Replace hardcoded paths with a configuration file
 
-All scripts reference `/blue/jjtanner/shared/proact/` directly. Extract all root paths, subject list location, and parameter values into a single `config.sh` (or `config.env`) file and source it at the top of each script. This makes the pipeline portable across users and HPC systems with a one-line change.
+All scripts reference my directory `/blue/jjtanner/shared/proact/` directly. Extract all root paths, subject list location, and parameter values into a single `config.sh` (or `config.env`) file and source it at the top of each script. This makes the pipeline portable across users and HPC systems with a one-line change.
 
 ```sh
 # config.sh
